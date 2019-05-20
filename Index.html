@@ -2,14 +2,15 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="CSS/Index.css">
-<Title>This Repo pushed by Git Bash using SSH key</tiltle>
+<Title>This Repo pushed by Git Bash using SSH key</title>
+<meta charset="UTF-8">
 </head>
 <body>
 <header>
 <nav>
 <ul>
 <li><a href="#">Home</li>
-<li><a href="#">Images</li>
+<li><a href="Images.html#">Images</li>
 <li><a href="#">About us</li>
 <li><a href="#">Contact Us</li>
 </ul>
@@ -21,6 +22,43 @@ though Git Bash (You may see the code not organized as it could using VS Code)</
 </br>
 I will push the repository befor and after some modifications</p>
 
+<h2>The Commands that I used</h2>
+<h3>Commands to start and prepare the Repo</h3>
+<table>
+<tr>
+<th>Command</th>
+<th>What do</th>
+<th>Note</th>
+</tr>
+<tr>
+<td>git init</td>
+<td>Start and create your Git repo</td>
+<td>This is the firt and must applied command</td>
+</tr>
+<tr>
+<td>git add . (or) git add TheFileName.itsExtension</td>
+<td>Add files and folders to your local Git repo to be commit later</td>
+<td>The "." after the "Git add" defin the whole files and folder, but if we mentioned a file or folder in specific instead of 
+typing "." it will add the specific file or folder.</td>
+</tr>
+<tr>
+<td> git status</td>
+<td>To know the status of our Git repo</td>
+<td>Sometimes its usful to know what the next step to do</td>
+</tr>
+<tr>
+<td>git commit -m "some message"</td>
+<td>to record a written message about the changes</td>
+<td>some times we can use "git commit -am" instead of git commit -m</td>
+</tr>
+</table>
+<h3>Command to create SSH key and upload the repo to github</h3>
+<ol>
+<li>git remote add origin url-of-the-github-repo</li>
+<li>eval $(ssh-agent -s)</li>
+<li>ssh-keygen</li>
+<li>ssh-add the-name-and-source-of-the-ssh-key-file</li>
+<li>git push -u origin master<li>
 <footer>All Rights reserved to LifeSpring</footer>
 </body>
 </html>
