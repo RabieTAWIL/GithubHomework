@@ -1,0 +1,19 @@
+h1{
+color:red;
+}
+
+.navbar{
+list-style:none;
+padding:2px;
+}
+.navbar li {
+float:left;
+color:white;
+background-color:gray;
+padding:5px;
+}
+footer{
+color:white;
+background-color:gray;
+}
+
